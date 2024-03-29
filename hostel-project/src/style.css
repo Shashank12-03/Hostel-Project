@@ -1,0 +1,19 @@
+.instruction-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .instruction-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .instruction-text ol {
+    margin-left: 20px;
+  }
+  
+  .instruction-text li {
+    margin-bottom: 5px;
+  }
