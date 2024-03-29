@@ -13,7 +13,6 @@ const Home = () => {
   return (
     <Box>
       <Routes>
-        <Route path='/' element={<Home/>} />
         <Route path="/leaves" element={<Leaves/>} />
         <Route path='/notices' element={<Notices/>}/>
         <Route path='/detailnotice' element={<NoticeDetail />}/>
@@ -22,6 +21,7 @@ const Home = () => {
         <Route path='/hostelLogIn' element={<HostelLogin/>}/>
         <Route path='/registerHostel' element={<RegisterHostel/>}/>
       </Routes>
+      <RegisterHostel/>
     </Box>
   )
 }

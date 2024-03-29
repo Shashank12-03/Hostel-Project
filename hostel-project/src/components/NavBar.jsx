@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Typography, List, ListItem, ListItemText, IconButton, Menu, MenuItem, Button } from '@mui/material';
+import { Typography, List, ListItem, ListItemText, IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const NavBar = () => {
@@ -49,13 +49,13 @@ const NavBar = () => {
                 ) : (
                     <div style={{ display: 'block', flexDirection: 'column' }}>
                         <List style={{ display: 'flex' }}>
-                            <ListItem button to='/notices' >
+                            <ListItem button to='/notices'component={Link} >
                                 <ListItemText primary="Notices" />
                             </ListItem>
-                            <ListItem button to='/complaints' >
+                            <ListItem button to='/complaints'component={Link} >
                                 <ListItemText primary="Complaints" />
                             </ListItem>
-                            <ListItem button to='/leaves'>
+                            <ListItem button to='/leaves' component={Link}>
                                 <ListItemText primary="Ask for leave" />
                             </ListItem>
                             <ListItem  button variant="outlined" component={Link} to='/logIn'>

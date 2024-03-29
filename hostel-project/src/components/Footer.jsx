@@ -1,10 +1,11 @@
 import React from 'react';
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const Footer = () => (
   <Box mt="80px" bgcolor="#FFF3F4">
-    
-    <Typography variant="h5" sx={{ fontSize: { lg: '28px', xs: '20px' } }} mt="41px" textAlign="center" pb="40px">Hostel name</Typography>
+    <Box  pb="40px">
+      <Typography variant="h5" sx={{ fontSize: { lg: '28px', xs: '20px' } }} textAlign="center">Hostel name</Typography>
+    </Box>
   </Box>
 );
 
