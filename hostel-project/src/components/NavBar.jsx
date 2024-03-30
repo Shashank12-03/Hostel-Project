@@ -11,6 +11,7 @@ const NavBar = () => {
     const handleMenuOpen = (event) => {
         setAnchorEl(event.currentTarget);
     };
+
     const handleLogOut = () => {
         setIsLogIn(false); // Update login state to false on logout
         handleMenuClose(); // Close the menu after logout
@@ -49,22 +50,22 @@ const NavBar = () => {
                 ) : (
                     <div style={{ display: 'block', flexDirection: 'column' }}>
                         <List style={{ display: 'flex' }}>
-                            <ListItem button to='/notices'component={Link} >
+                            <ListItem button to='/notices' component={Link} >
                                 <ListItemText primary="Notices" />
                             </ListItem>
-                            <ListItem button to='/complaints'component={Link} >
+                            <ListItem button to='/complaints' component={Link} >
                                 <ListItemText primary="Complaints" />
                             </ListItem>
                             <ListItem button to='/leaves' component={Link}>
                                 <ListItemText primary="Ask for leave" />
                             </ListItem>
-                            <ListItem  button variant="outlined" component={Link} to='/logIn'>
+                            <ListItem  button variant="outlined" component={Link} to='/Student/LogIn'>
                                 Student Log in
                             </ListItem>
-                            {!isLogIn && <ListItem  button variant="outlined" component={Link} to='/hostelLogIn'>
+                            {!isLogIn && <ListItem  button variant="outlined" component={Link} to='/Hostel/Login'>
                                 Hostel Log in
                             </ListItem>}
-                            {isLogIn && <ListItem  button variant="outlined" component={Link} onClick={handleLogOut} to='/hostelLogIn'>
+                            {isLogIn && <ListItem  button variant="outlined" component={Link} onClick={handleLogOut} to='/Hostel/Login'>
                                 Hostel Log out
                             </ListItem>}
                         </List>
@@ -84,7 +85,7 @@ const NavBar = () => {
                     <MenuItem component={Link} to='/leaves' onClick={handleMenuClose}>
                         <ListItemText primary="Ask for leave" />
                     </MenuItem>
-                    <MenuItem component={Link} to='/logIn' onClick={handleMenuClose}>
+                    <MenuItem component={Link} to='/Student/LogIn' onClick={handleMenuClose}>
                         Student log in
                     </MenuItem>
                     {isLogIn && (
@@ -93,7 +94,7 @@ const NavBar = () => {
                         </MenuItem>
                     )}
                     {!isLogIn && (
-                        <MenuItem component={Link} to='/hostelLogIn' onClick={handleMenuClose}>
+                        <MenuItem component={Link} to='/Hostel/Login' onClick={handleMenuClose}>
                             Hostel log in
                         </MenuItem>
                     )}
