@@ -39,10 +39,11 @@ const NavBar = () => {
     return (
         <div style={{ backgroundColor: '#000', color: '#fff', padding: '2px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Typography fontSize="29px" sx={{ml:'12px'}}>
-                    Hostelname
-                </Typography>
-                
+                <Link to='/' style={{textDecoration:'none',color:'#fff'}}>
+                    <Typography fontSize="29px" sx={{ml:'12px'}}>
+                        HostelName
+                    </Typography>
+                </Link>
                 {screenSize === 'xs' ? (
                     <IconButton onClick={handleMenuOpen} edge="end" color="inherit" aria-label="menu" sx={{mr:'2px'}}>
                         <MenuIcon />

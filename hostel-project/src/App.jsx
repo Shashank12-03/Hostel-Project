@@ -8,9 +8,9 @@ import Notices from './pages/Student//Notices';
 import NoticeDetail from './pages/Student/NoticeDetail';
 import Complaints from './pages/Student/Complaints';
 import LogIn from './pages/Student/LogIn';
-import HostelLogin from './components/Hostel/HostelLogin';
-import RegisterHostel from './components/Hostel/RegisterHostel';
 import './App.css';
+import HostelRegistrationPage from './pages/Hostel/HostelRegistrationPage';
+import HostelLoginPage from './pages/Hostel/HostelLoginPage';
 
 function App() {
   return (
@@ -23,8 +23,8 @@ function App() {
         <Route path='/detailnotice' element={<NoticeDetail />} />
         <Route path='/complaints' element={<Complaints />} />
         <Route path='/Student/logIn' element={<LogIn />} />
-        <Route path='/Hostel/Login' element={<HostelLogin />} />
-        <Route path='/registerHostel' element={<RegisterHostel />} />
+        <Route path='/Hostel/Login' element={<HostelLoginPage />} />
+        <Route path='/registerHostel' element={<HostelRegistrationPage />} />
       </Routes>
       <Footer/>
     </div>

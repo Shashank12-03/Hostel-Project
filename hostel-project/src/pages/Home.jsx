@@ -1,9 +1,14 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <Box>
-      <h1>Welcome to Hostel Management System</h1>
+        <Button variant="contained" color="primary">
+          <Link to="/registerHostel">
+              Get start with your hostel
+          </Link>
+        </Button>
     </Box>
   )
 }
